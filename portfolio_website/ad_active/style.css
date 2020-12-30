@@ -1,0 +1,699 @@
+/* do poprawy : 
+ok 1) button follow the caus na środku, powinien być bardziej na lewo
+2) margin of left and right area
+3) logo should be the same size 
+4) you might see image - not readalble - chanege or make better
+ok 5)  in action area - $28 buton zrobić chyba input, żeby wygladało jakby dało się zmienić, tak jak add to conversation 
+6) colours of text - never black
+7) make variables of colous 
+8) make in js dark mode 
+9) how site should look on the mobiles and smalle devices! - media queries - make site on phones  */
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container{
+    display: grid;
+    
+    grid-template-columns: 80px 22% auto 22% 200px;
+
+    /* grid-template-rows: [row1-start] 25% [row1-end row2-start] 25% [row2-end]; */
+
+    grid-template-rows:  [row1-start] 5% [row1-end row2-start] 10% [row2-end row3-start] auto [row3-end row4-start] 5% [row4-end];
+
+}
+
+/* NAV BAR */
+
+nav{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.logo img {
+    height: 100%;
+    width: 70%;
+}
+ul{
+    
+    width: 100%;
+    margin-left: 30rem;
+}
+
+ul li{
+    display: inline;
+    text-decoration: none;
+    padding: 1rem;    
+}
+
+nav i {
+    color: #688516;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.highligted{
+    background-color:  #688516;
+    color: ghostwhite;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+/* HERO AREA */
+
+.hero-area{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.header{
+    width: 60%;
+}
+h1{
+    margin: 0.5rem;
+    font-size: 1.6rem;
+}
+.location{
+    display: flex;
+    margin: 0.5rem;
+
+}
+
+.location i{
+        color: rgb(54, 54, 54);
+}
+.jeden{
+    display: flex;
+}
+.dwa{
+    display: flex;
+    justify-self: start;
+}
+.location{
+   justify-content: space-between;
+   align-items: center;
+}
+
+.location button{
+    background-color: #688516;
+    border: none;
+    color: honeydew;
+    padding: 0.5rem 0.25rem;
+    width: 10rem;
+    border-radius: 20px;
+}
+
+.container_hero{
+    display: flex;
+}
+
+.big-buttons button{
+    background-color: #688516;
+    border: none;
+    color: honeydew;
+    padding: 1.5rem 1rem;
+    width: 10rem;
+    font-weight: 500;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.big-buttons > .red_cta_btn{
+    background-color: #e00d30;
+}
+.hero-area p{
+    margin: 0 1rem;
+}
+
+/* RIGHT AREA */
+.right-area__container{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    
+}
+
+.right-area__one--container{
+    margin: 1rem;
+    justify-content: center;
+}
+
+.par1{
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.par2{
+    font-size: 0.9rem;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 8px;
+    background: linear-gradient(to right,  #1eb66a ,  rgb(76, 76, 206));
+    outline: none;
+    border-radius: 10px;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin: 0.5rem;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.404);
+    background: #ffffff; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  .right-area__two{
+      margin: 4rem 0;
+  }
+  .right-area__two--container{
+    margin: 0 2rem;
+      display: flex;
+      justify-items: center;
+  }
+
+  .right-area__container img{
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    padding: 2px;
+    border: 2px solid gray;
+    margin-left: 2rem;
+}
+.right-area__container p{
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.right-area__two button{
+    background-color: rgb(57, 74, 168);
+    border: none;
+    color: honeydew;
+    padding: 0.5rem 2rem; /*jakby co to to trza zmieniac */
+    width: 15rem;
+    font-weight: 500;
+    border-radius: 20px;
+    margin: 1rem 2rem;  
+}
+
+.option{
+    margin: 1rem;
+    width: 90%;
+    height: 175px;
+}
+
+.bg-img__1{
+    background-image: url(./imges/bg_img__1.jpg);
+    background-position: right top;
+    background-size: cover;
+    height: 100%;
+    filter: brightness(50%)
+    
+}
+
+.bg-img__2{
+    background-image: url(./imges/bg_img__2.jpg);
+    background-position: right top;
+    background-size: cover;
+    height: 100%;
+}
+
+.right-area__tree p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    top: 5rem;
+}
+.right-area__tree button{
+background-color: rgb(57, 74, 168);
+border: none;
+color: honeydew;
+padding: 0.5rem 2rem; /*jakby co to to trza zmieniac */
+width: 15rem;
+font-weight: 500;
+border-radius: 20px;
+margin: 1rem 2rem;
+}
+
+/* LEFT AREA */
+.left-area__container{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    
+}
+
+.left-area__one{
+    text-align: center;
+    margin: 1rem;
+}
+h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.39); 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+} 
+ 
+ h2 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+
+.main_title{
+    border-bottom: 4px double rgba(0, 0, 0, 0.212);
+}
+
+.donation_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+h6{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 1.9rem;
+    font-weight: 300;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    border-radius: 5px; 
+    padding: 0.5rem 2rem ;
+    margin:0.5rem 2rem ;
+}
+
+.donation{
+    display: flex;
+}
+
+.dollar_btn{
+ padding: 1rem;
+ border-bottom-left-radius: 5px;
+ border-top-left-radius: 5px;
+ border:1px solid  #898a87;
+ background-image: linear-gradient(to bottom, rgb(252, 252, 247), rgb(233, 233, 233));
+}
+
+.donate_value{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left: none;
+    padding: 1rem;
+    width: 60px;
+    text-align: center;
+    border:1px solid  #898a87
+
+}
+
+/* .line{
+    background-color: rgba(0, 0, 0, 0.39);
+    width:2px;
+    height: 100%;
+} */
+
+/* .line{
+    border-left: 6px solid black; 
+    height: 300px; 
+    position:absolute; 
+    left: 50%; 
+} */
+
+
+.donation_btn {
+    background-color: #688516;
+    border: none;
+    color: honeydew;
+    padding: 1.5rem 1rem; /*jakby co to to trza zmieniac */
+    width: 8rem;
+    font-weight: 500;
+    border-radius: 5px;
+    margin: 0.5rem;
+ }
+
+ .left-area__one p{
+    padding: 0.5rem;
+}
+
+ .colorful_btns button{
+    background-color: blue;
+    border: none;
+    color: honeydew;
+    padding: 0.5rem 2rem; /*jakby co to to trza zmieniac */
+    width: 15rem;
+    font-weight: 500;
+    border-radius: 20px;
+    margin: 0.5rem;
+ }
+
+ .colorful_btns>.blue_btn{
+    background-color: rgb(108, 108, 180);
+ }
+
+ .colorful_btns>.green_btn{
+    background-color: #688516;
+ }
+
+ .colorful_btns>.gray_btn{
+    background-color: #5d6151;
+ }
+
+.left-area__two {
+    margin:2rem 0;
+}
+ .icon_container{
+     font-size: 2rem;
+     justify-content: space-evenly;
+     margin: 1rem;
+     text-align: center;
+ }
+
+.fa-youtube{
+    color: rgb(209, 32, 32);
+}
+.fa-google-plus-g{
+    color: rgb(209, 65, 65);
+}
+.fa-facebook-square{
+    color: rgb(57, 74, 168);
+}
+.fa-twitter{
+    color: rgb(79, 162, 211);
+}
+.fa-whatsapp{
+    color: rgb(38, 146, 43);
+}
+
+.shared_link{
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    border-radius: 5px;
+    width: 90%;
+    padding: 1rem;
+    margin-left:1rem;
+    vertical-align: middle;
+    text-align: left;
+    
+}
+
+.shared_link p{
+    font-size: 0.7rem;
+}
+
+.shared_link i{
+   margin-left: 3rem;
+}
+
+
+.campagner_container{ 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.red_campagner{
+    display: flex;
+}
+.blue_campagner{
+    display: flex;
+}
+
+.left-area__container img{
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+}
+
+.red_campagner>.camagner img{
+    border: 2px solid #e00d30;
+    padding: 4px;
+}
+
+.red_campagner>.camagner i{
+    color: rgb(209, 32, 32); 
+}
+
+.blue_campagner>.camagner img{
+    border: 2px solid rgb(57, 74, 168);
+    padding: 4px;
+}
+
+.blue_campagner>.camagner i{
+    color: rgb(57, 74, 168);   
+}
+
+.left-area__tree button{
+    background-color: rgb(57, 74, 168);
+    border: none;
+    color: honeydew;
+    padding: 0.5rem 2rem; /*jakby co to to trza zmieniac */
+    width: 15rem;
+    font-weight: 500;
+    border-radius: 20px;
+    margin: 1rem 2.2rem;
+
+}
+
+
+/* MAIN AREA */
+
+main{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    margin-bottom: 3rem;
+}
+
+.btn_container{
+    display: flex;
+    justify-content: center;
+    margin:0 0.5rem;
+}
+
+.front_btn{
+    margin: 0.5rem 0;
+    padding:0.5rem 1.5rem;
+    border-radius: 5px;
+    border: 1px solid rgb(167, 167, 167);
+    background-image: linear-gradient(to bottom, rgb(252, 252, 247), rgb(233, 233, 233));
+}
+
+.btn_container i{
+    color: #688516 ;
+}
+
+.conteiner_feed{
+    border-top: 1px solid rgb(221, 220, 220);
+    border-left:2px solid rgb(167, 167, 167);
+    border-bottom:2px solid rgb(167, 167, 167);
+    border-right:2px solid rgb(167, 167, 167);
+    border-radius: 10px;
+    box-shadow: 2px 5px 6px rgba(161, 154, 154, 0.432);
+    padding:0.5rem 3rem;
+}
+
+
+.your_post--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    height: 60px;
+}
+
+.post_area{
+    width: 300px;
+    padding: 1rem;
+    border: 2px solid rgb(167, 167, 167);
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 0;
+}
+
+.post_btn{
+    padding: 1rem;
+    width: 150px;
+    border: 2px solid rgb(167, 167, 167);
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0;
+    background-color:  #688516;
+    color: honeydew;
+    font-weight: 500;
+
+}
+
+.feed_area--container img{
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    margin-right: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.post_container> .person img{
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    margin-right: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.person{
+    display: flex;
+}
+
+.about_post{
+    margin-top:0.5rem;
+}
+
+.about_post>.name{
+ font-size: 1rem;
+ color: rgb(78, 89, 99);
+}
+
+.about_post>.date_posted{
+    color: rgb(132, 143, 155);
+}
+
+
+.past_posts--container{
+    margin: 2rem;
+}
+
+.past_posts--container img{
+    height:500px;
+    width: 100%;
+}
+
+.reaction-area img{
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    margin-right: 1rem;
+    margin-bottom: 0.2rem;
+}
+.description{
+    margin: 1rem 0;
+}
+
+
+.reaction-area ul{
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.reaction-area a{
+    text-decoration: none;
+    color: rgb(31, 34, 37);
+}
+.reaction-area i{
+    color: #688516;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.reaction-area{
+    border-top: 6px double rgba(33, 36, 39, 0.178); 
+}
+.description>.title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(36, 41, 46);
+}
+.post_container{
+    margin: 4rem 0;
+}
+
+.post_container h5{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.post_container> .comment_container{
+    background: rgb(240, 234, 234);
+    margin: -4rem 0;
+}
+
+.post_container ul{
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.post_container i{
+    color: #688516;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.post_container a{
+    text-decoration: none;
+    color: rgb(31, 34, 37);
+    font-weight: 600;
+}
+
+/* FOOTER  */
+footer{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    border-top: 4px double gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_container{
+    text-align: end;
+    padding-top: 2rem;
+}
+
+
+.footer_container ul{
+    margin: 0;
+}
+
+.footery{
+    color: rgb(29, 30, 31);
+    text-decoration: none;
+   
+}
+
+.footery i{
+    font-size: 1.5rem; 
+    color: #688516;
+}
+
+
+

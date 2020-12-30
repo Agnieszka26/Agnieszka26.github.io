@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+}
+
+body{
+    background: #131313;
+    color: aliceblue;
+    display: flex;
+    margin:0;
+    padding: 0;
+}
+
+
+
+.logo{
+    border-radius: 50%;
+    background-color: aliceblue;
+    color: rgb(31, 31, 31);
+    padding: 2rem;
+}
+
+.container_logo{
+    display: flex;
+    margin: 1rem;
+}
+
+.logo_text{
+    padding-left: 2rem;
+    font-size: 2.5rem;
+}
+
+
+main{
+    width: 40%;
+}
+
+
+img{
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.box{
+    background: rgb(85, 85, 85);
+    margin: 2rem 0rem;
+}
+.text{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.arrow{
+    display: flex;
+    justify-content: space-between;
+}
+
+i{
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+@media screen and (max-width:786px){
+
+    body{
+        flex-direction: column;
+
+    }
+
+    /* main{
+        height: 100%;
+        width: 100%;
+    } */
+
+    .logo_text{
+        font-size: 1rem;
+    }
+
+    .container_logo i{
+        font-size: 1rem;
+    }
+
+    .logo{
+        padding: 0.5rem;
+    }
+
+    aside,
+    main{
+        height: auto;
+        width: 100%;
+    }
+}

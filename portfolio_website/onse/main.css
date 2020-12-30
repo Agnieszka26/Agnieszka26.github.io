@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,900');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    /* overflow: auto; daje iluzje more reponsive, ale nie o to chodzi :P  */
+}
+h1{
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 1rem;
+
+}
+
+h4{
+    font-weight: 100;
+    font-size: 1rem;
+    padding: 1.5rem;
+}
+
+h6{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #000b53;
+    
+}
+
+
+#main_section{
+    background-image: url("bg.png");
+    background-size: cover;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header__brand img {
+    height: 1.5rem;
+    padding: 1.5rem;
+    box-sizing: content-box;
+}
+
+li .main-nav__items {
+    margin: 0;
+    padding: 1.8rem 5rem;
+    list-style: none;
+    display: flex;
+    font-size: 2rem;
+}
+
+.main-nav__item {
+    margin: 0 1.5rem;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color:white;
+}
+
+.main-nav__item a:hover{
+    text-decoration: underline;
+}
+.conteiner_1{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    
+}
+
+.hero__image-container{
+    padding: 2rem;
+    position: relative;
+}
+
+.hero__image {
+    position: static;
+
+}
+
+.hero__info{
+    text-align: center;
+    color: #000b53;
+    padding: 3.5rem 5rem;
+    width: 50%;
+}
+
+.hero__title{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 1rem;
+}
+
+.hero-text__subtitle{
+    font-size: 0.8rem;
+    font-weight: 200;
+    margin: 1.5rem;
+    justify-content: center;
+    text-align: center;
+}
+.hero-button{
+    background: #00429d;
+    border:2px solid #ffffff;
+    border-radius:8px;
+    width:200px;
+    height:50px;
+    color:#ffffff;
+    display:inline-block;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* tutaj ma być FEATURES */
+.main_features{
+    
+    display: flex;
+    margin: 4rem;
+}
+/* .feature {
+ height: 20rem;
+ width: 30rem;
+} */
+
+.icon {
+    height: 10rem;
+    width: 10rem;
+    padding: 2rem;
+    display: block;
+    margin: 0 auto;
+}
+
+h5,p{
+    text-align: center;
+    color:#000b53;
+    margin: 1rem;
+}
+
+/*stylizacja OPCJE*/
+.pelicula{
+    background-color: #e5ecf5;
+}
+
+.item__option--slider{
+    width: 100%;
+}
+
+.img-tele{
+    width: 60%;
+    display: flex;
+    
+}
+
+.option1__tele75{
+    width: 100%;
+}
+
+.option2__tele100{
+    width: 100%;
+}
+
+h3,h4{
+    text-align: center;
+    color:#000b53;
+}
+
+.option1, .option2{
+    display: flex;
+    justify-content: center;
+}
+
+.slidecontainer {
+    width: 70%;
+    padding-left: 3rem;
+  }
+  
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 0.5rem;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+  .slider:hover {
+    opacity: 1;
+  }
+
+  .slidecontainer label{
+      display: flex;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;  
+    background: #00429d;
+    cursor: pointer;
+
+  }
+  
+  .buton_comprar{
+    background:#ff3300;
+    border: none;
+    border-radius:15px;
+    width:6rem;
+    height:2.5rem;
+    color:#ffffff;
+    display:inline-block;
+    text-align:center;
+    margin: 2rem;
+    align-self: flex-end;
+  }
+
+/* stylizacja lorem epsum  */
+.adventage{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+}
+
+.adventage_1-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;  
+}
+
+.adventage_2-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.grid-item button{
+    background:#ff3300;
+    border: none;
+    border-radius:15px;
+    width:6rem;
+    height:2.5rem;
+    color:#ffffff;
+    display:inline-block;
+    text-align:center;
+    margin: 2rem;
+}
+
+/* stylizacja faq */
+
+.grid-container__faq{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 10px;
+}
+
+
+
+
+
+/* stylizacja footer*/
+
+footer{
+    background-image: linear-gradient(45deg,#3098c9 10%, #0e5188 90%);
+}
+
+.main-footer{ 
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+
+ul, li{
+    font-size: 0.7rem;
+    align-items: center;
+    list-style: none;
+    color: rgb(243, 243, 242);
+}
+
+
+ li{
+     padding: 0.5rem;
+ }
+ 
+ .yellow{
+     color: rgb(255, 221, 29);
+     display: inline;
+ }
+
+ .footer_subtitle{
+     color: rgb(243, 243, 242);
+ }
+
+.subtitle_foot{
+    color:rgb(243, 243, 242);
+    display: block;
+    white-space: normal;
+    margin-top: -2rem;
+}
+
+.pic-foot{
+    margin-left: -1.5rem;
+}
+
+hr{
+    border: 1px solid rgba(243, 243, 242, 0.3);
+    margin: 1.5rem 0;
+}
+
+.footer-terms{
+    padding: 0;
+    margin: 0 3rem 0 0;
+    color:rgb(243, 243, 242);
+}

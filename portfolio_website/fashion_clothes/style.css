@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    background: rgb(79,222,86);
+    background: linear-gradient(rgb(248, 229, 200) 0%, rgb(250, 211, 253) 87%);
+    border-left:30px solid  rgb(206, 77, 218);
+    border-right:30px solid  rgb(206, 77, 218);
+    font-family: 'Dosis', sans-serif;
+    font-style: italic;
+    margin: 0;
+}
+
+.container{
+    padding: 2rem;
+    margin: 0 auto;
+    width: 1000px;
+    max-width: 100%;
+}
+
+.logo{
+    color:rgb(206, 77, 218);
+    font-size: 4rem;
+}
+
+h1{
+    color:rgb(206, 77, 218);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 3rem;
+    margin: 0 1rem;
+    flex-wrap: wrap;
+}
+h1 a{
+    transform: scale(0.5);
+}
+
+h2{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+a{
+    display: inline-block;
+    color: aliceblue;
+    padding: 1rem 2rem;
+    position: relative;
+    text-decoration: none;
+}
+
+a::after{
+    background-color: rgb(206, 77, 218);
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;    
+    width: 100%;
+    height: 100%;
+    transform: skew(-30deg);
+    z-index: -1;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 1rem;
+}
+.col{
+    flex: 1;
+    text-align: center;
+    
+}
+.col:first-child{
+    margin-right: 2rem;
+}
+.img1{
+    height: 500px;
+    margin: 2rem;
+    box-shadow: 15px 18px rgb(206, 77, 218);
+}
+
+/* funny : one picture's dimentional must be in not responsive unit (px), otherwise there is no effect on wraping pictures pozdro  */
+
+.img2 {
+    height: 60%;
+    width: 100%;
+    margin-left: 0;
+    box-shadow: -15px -18px rgb(206, 77, 218);
+}
+.text{
+    font-size: 2rem;
+}
+.text p{
+    font-weight: 100;
+}
+
+@media screen and (max-width: 760px){
+
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}

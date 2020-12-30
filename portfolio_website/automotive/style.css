@@ -1,0 +1,136 @@
+/* zastanówmy się nad responsive website , jak zrobic zeby footer był responisive, na małe ekrany mozna dodac hamburgera */
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+    background-image: url(./bg-car.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: aliceblue;
+    min-height: 100vh;
+    flex-direction: column;
+
+}
+
+.highlited{
+    background: #2e90a8;
+}
+
+
+ 
+header{
+    display: grid;
+    flex-direction: column;
+    min-height: calc(100vh - 20%);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+
+.conteiner_header{
+ 
+ text-align: start;
+ grid-column: 2/2;
+ grid-row: 2/2;
+}
+
+
+.conteiner_header a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 1rem;
+    min-width: 5rem;
+    min-height: 3rem;
+}
+
+.conteiner_header p{
+    font-size: 1.5rem;
+
+}
+
+.conteiner_header h1{
+    font-size: 3rem;
+    color: #2e90a8 ;
+    margin: 0 auto;
+    padding: 0;
+}
+.selected{
+    font-weight: bold;
+}
+
+.container {
+    width: 100vw;
+    background-color: rgba(37, 32, 32, 0.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav .logo{ 
+    font-size: 2rem;
+    margin-left: 5rem;
+}
+
+
+.logo p {
+    display: inline;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+ 
+li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 1rem;
+}
+
+
+footer{
+    display: flex;
+    height: 20%;
+    padding: 0rem;
+    margin: 0rem;
+    justify-content: space-evenly;
+  
+    
+}
+
+footer ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 2.5rem;
+    padding-top: 1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    
+
+}
+
+footer .container{
+    margin: 0;
+    
+}
+
+footer p{
+    margin: 0;
+}

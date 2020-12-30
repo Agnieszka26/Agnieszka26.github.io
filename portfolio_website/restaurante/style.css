@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+}
+
+body{
+    background: url(./bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-rows: 1fr 1fr 9fr 1fr;
+}
+h2{
+    display: inline;
+    
+}
+
+a:hover{
+    text-decoration: underline;
+    opacity: 0.7;
+}
+h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.top-nav{
+    grid-column: 2 /2;
+    grid-row: 1/1;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0rem;
+    font-size: 1.5rem;
+    color: rgb(121, 36, 88);
+}
+
+nav{
+    padding: 0;
+    margin: 0;
+}
+
+.nav-container{
+    grid-row: 2/ 2;
+    grid-column: 2/2; 
+    display: flex;
+    justify-content:space-evenly;  
+    
+}
+
+ul{
+    padding: 0;
+}
+li{
+    display:inline;
+    text-decoration: none;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: rgb(121, 36, 88);
+   
+}
+a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: aliceblue;
+    
+}
+
+.selected {
+    background-color: aliceblue;
+    
+}
+.selected a{
+    color: rgb(121, 36, 88);
+    font-weight: bold;
+}
+
+.highlighted{
+    background-color: rgb(99, 0, 61);
+
+}
+
+header{
+    grid-row: 3/3;
+    grid-column: 2/2;
+    align-self:center;
+}
+
+h1{
+    font-size: 3rem;
+    padding: 1.5rem;
+    font-family: 'Bubbler One', sans-serif;
+    color:  rgb(43, 4, 28);
+}
+
+.conteiner_small_letters a{
+    padding: 1rem 1.5rem 1rem 1.5rem;
+}
+
+.conteiner_small_letters{
+    padding: 1.5rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    color: rgb(43, 4, 28);
+    border: 1px solid  rgb(43, 4, 28);
+    height: auto;
+    width: 50%;
+    margin: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* h3:hover{
+transition: .3s all ease-in-out;
+} */
+@media screen and ( max-width: 1250px ){
+    .grid-container{
+        display: grid;
+        grid-template-columns: 2fr 4fr 2fr;
+        grid-template-rows: 1fr 330px 6fr 1fr;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        /* justify-items: flex-start; */
+    }
+
+    .nav-container{
+
+        justify-content: start;
+    
+        
+    } 
+}
