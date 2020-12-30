@@ -1,0 +1,119 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: rgb(39, 39, 39);
+    background: rgb(125, 205, 248);
+    background: linear-gradient(53deg, #8eafc0 40%, rgb(255, 155, 222) 75%);
+   
+}
+
+#particles-js{
+    height: 30vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(24, 24, 24);
+}
+
+a:hover{
+    color: blanchedalmond;
+    text-shadow: 1px 2px 2px  rgb(43, 106, 139);
+}
+
+li{
+    list-style-type: none;
+    margin: 2rem;
+}
+
+header{
+    height: 40vh;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+header h1{
+    margin-top: 4rem;
+    font-size: 3rem;
+}
+
+
+footer{
+    height: 10vh;
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+i{
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.grid-wallpaper{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+h1,h2{
+    text-align: center;
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+}
+
+.me{
+    border-radius: 50%;
+}
+a img{
+    height: 400px;
+    width: 250px;
+}
+
+
+.small_img {
+    height: 200px;
+    width: 250px;
+}
+
+
+.box> img{
+    width: 100%;
+}
+
+.box{
+    padding:2rem;
+    margin:1rem;
+
+}
+
+
+.zone {
+    cursor:pointer;
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
