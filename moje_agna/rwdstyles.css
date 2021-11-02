@@ -1,0 +1,251 @@
+/* 320px
+480px
+600px
+768px
+900px
+1024px
+1200px */
+
+@media screen and (min-width: 768px) {
+
+    /* animation little */
+    .scroll-block{
+        display:flex;
+        justify-content: end;
+        margin-top: 20rem;
+        margin-right: 2rem;
+        height: 150px;
+    }
+
+    .anima{
+        width:3px;
+        height: 150px;
+        background: white;
+        position: relative;
+        animation: mymove;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out;
+        animation-duration: 3s;
+    }
+
+    @keyframes mymove {
+        0% {height: 0px;}
+        30% {height: 150px;      }
+        40%{height: 150px;}
+        70%{height: 150px;}
+        100% {height: 0px;}
+      }
+
+    .scroll-block>.scroll-text{
+       
+        color: white;
+        transform: rotate(90deg);
+        font-family:'Mulish', sans-serif;
+        font-weight: 600;
+        font-size: 1.2rem ;
+        margin: 1rem 1rem 1rem -5rem;
+        letter-spacing: 5px;
+    }
+
+
+    main{
+        padding-bottom: 0px;
+    }
+    
+    .tags{
+        justify-content: start;
+    }
+    .just_cont{
+        justify-content:space-evenly;
+    }
+
+    h5{
+        text-align: center;
+    }
+
+    .aboutMe{
+        padding-bottom: 30px;
+    }
+
+}
+
+@media screen and (min-width: 900px){
+h3,h1{
+    width: 70%;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+.flex_big>img{
+    width: 50%;
+}
+
+.flex_big{
+    width: 90vw;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+h5{
+    text-align: start;
+
+}
+
+.container{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+h5.text{
+    margin-top: 40px;
+    margin-left: 0px;
+    margin-right: 0;
+}
+.reverse{
+    flex-direction:row;
+}
+
+section{
+    margin-bottom: 120px;
+}
+
+.just_cont{
+    justify-content:space-between;
+}
+
+.aboutMe>p{
+
+    font-size: 1.6rem;
+    padding-top: 10px;
+    letter-spacing: 0.02em;
+    width: 80%;
+}
+
+
+.aboutMe>h2{
+    font-size: 2.3rem;
+    letter-spacing: 0.02em;
+}
+
+}
+
+@media screen and (min-width: 1024px){
+    nav {
+        margin: 0 8rem;
+
+    }
+    a{
+        font-size: 1.2rem;
+    }
+    .text{
+        padding-left: 6rem;
+    }
+    .container>.text{
+        padding-left: 0rem;
+    }
+    
+    section{
+    margin: 4rem 0rem 0rem 6rem;
+    }
+
+    .flex_big{
+        width: 85vw;
+    }
+
+    .aboutMe{
+        padding: 4rem 0rem 4rem 6rem;
+    }
+
+    footer>.text{
+        margin: 0;
+    }
+
+    footer>p{
+        padding:0 0 0 6rem;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px){
+
+    main{
+        height: 100vh;
+    }
+    nav {
+        margin: 0 10rem;
+    }
+
+    h3{
+        margin: 5rem 2rem 2rem 0;
+        line-height: 3rem;
+    }
+
+    .text{
+        padding-left: 8rem;
+        padding-top: 4rem;
+    }
+    h5{
+        font-size: 1.5rem;
+        color: rgb(17, 17, 17);
+        margin: 0px;
+    }
+    .container{
+        margin: 0 2rem 0 0 ;
+    }
+
+    .just_cont{
+        justify-content: space-around;
+    }
+
+    .reverse>.container>h5{
+        margin: 0 0rem 2rem 2rem;
+    }
+
+    .flex_big>img{
+        height: 60vh;
+    }
+
+    .scroll-block{
+        margin-top: 75vh;
+    }
+    section{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    .flex_big{
+        width: 100%;
+    }
+
+    .aboutMe{
+        padding: 5rem 10rem 5rem 10rem;
+    }
+
+    .aboutMe>p{
+        line-height: 3rem;
+    }
+
+    footer{
+        padding: 0 8rem 1rem 10rem;
+    }
+
+    footer>p{
+        padding:0 0 0 0rem;
+    }
+
+    footer>h3{
+        width: 100%;
+    }
+
+
+    footer>.text{
+        padding: 0rem;
+    }
+
+}
